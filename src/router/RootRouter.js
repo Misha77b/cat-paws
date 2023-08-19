@@ -1,11 +1,11 @@
 import React from "react";
-import Navigation from "../components/naviagtion/Navigation";
 import { Outlet } from "react-router";
+import Main from "../components/main/Main";
 
 const RootRouter = () => {
   return (
     <>
-      <Navigation />
+      <Main />
       <Outlet />
     </>
   );
