@@ -1,0 +1,27 @@
+.nav-box__btn {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  width: 138px;
+  padding: 10px 0;
+  color: #ff868e;
+  background: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav-box__btn:hover {
+  background: #fbe0dc;
+}
+
+.nav-box__btn-active {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  width: 138px;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #fff;
+  background: #ff868e;
+  text-decoration: none;
+}
