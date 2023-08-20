@@ -8,14 +8,14 @@ import Navigation from "../naviagtion/Navigation";
 
 const Main = () => {
   return (
-    <>
+    <Box>
       <Header />
       <Box>
         <Greeting />
         {/* Nav icons */}
         <Navigation />
       </Box>
-    </>
+    </Box>
   );
 };
 
