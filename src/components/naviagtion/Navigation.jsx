@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // MUI components
+import { navData } from "./navData";
+import { NavLink } from "react-router-dom";
 import { Box, Button } from "@mui/material";
+import NavItem from "./components/NavItem";
+// import { NavbarLink } from "./components/styledNavLink";
 
 const Navigation = () => {
+  console.log(navData);
+
   return (
     <Box sx={{ display: "flex", gap: "10px" }}>
-      <Box>
+      {navData.map((item) => {
+        return (
+          <NavItem
+            title={item.title}
+            color={item.color}
+            img={item.img}
+            imgAlt={item.imgAlt}
+            imgSize={item.imgSize}
+            link={item.link}
+          />
+        );
+      })}
+      {/* <Box>
         <Box
           sx={{
             width: "130px",
@@ -18,11 +36,13 @@ const Navigation = () => {
           <img src="./assets/voting.png" alt="voting" />
         </Box>
         <Button
+          component={NavLink}
+          to="/voting"
           sx={{
             marginTop: "10px",
             textAlign: "center",
             width: "138px",
-            padding: "14px 0",
+            padding: "10px 0",
             color: "#FF868E",
             borderRadius: "10px",
           }}
@@ -47,7 +67,7 @@ const Navigation = () => {
             marginTop: "10px",
             textAlign: "center",
             width: "138px",
-            padding: "14px 0",
+            padding: "10px 0",
             color: "#FF868E",
             borderRadius: "10px",
           }}
@@ -72,14 +92,14 @@ const Navigation = () => {
             marginTop: "10px",
             textAlign: "center",
             width: "138px",
-            padding: "14px 0",
+            padding: "10px 0",
             color: "#FF868E",
             borderRadius: "10px",
           }}
         >
           GALLARY
         </Button>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
