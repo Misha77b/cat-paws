@@ -9,6 +9,7 @@ export const navData = [
       height: "125px",
     },
     link: "/voting",
+    key: 1,
   },
   {
     title: "BREEDS",
@@ -20,6 +21,7 @@ export const navData = [
       height: "163px",
     },
     link: "/breeds",
+    key: 2,
   },
   {
     title: "GALLARY",
@@ -31,5 +33,6 @@ export const navData = [
       height: "190px",
     },
     link: "/gallary",
+    key: 3,
   },
 ];

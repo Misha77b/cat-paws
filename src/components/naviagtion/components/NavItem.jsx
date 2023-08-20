@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Box, Button } from "@mui/material";
-// import UseStylesNavigation from "./useStylesNavigation";
+import { NavLink } from "react-router-dom";
+import { Box } from "@mui/material";
+import "./NavItem.scss";
 
 const NavItem = ({ title, color, img, imgAlt, imgSize, link }) => {
-  //   UseStylesNavigation();
-
   return (
-    <Box>
+    <>
       <Box
         sx={{
           display: "flex",
@@ -22,21 +20,16 @@ const NavItem = ({ title, color, img, imgAlt, imgSize, link }) => {
       >
         <img style={imgSize} src={img} alt={imgAlt} />
       </Box>
-      <Button
-        component={Link}
+      <NavLink
+        component={NavLink}
+        className={({ isActive }) =>
+          isActive ? "nav-box__btn-active" : "nav-box__btn"
+        }
         to={link}
-        sx={{
-          marginTop: "10px",
-          textAlign: "center",
-          width: "138px",
-          padding: "14px 0",
-          color: "#FF868E",
-          borderRadius: "10px",
-        }}
       >
         {title}
-      </Button>
-    </Box>
+      </NavLink>
+    </>
   );
 };
 
