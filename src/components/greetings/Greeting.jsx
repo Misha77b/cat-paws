@@ -12,8 +12,8 @@ const Greeting = () => {
           fontSize: "44px",
           fontWeight: "500",
           lieHeight: "58px",
-          color: "#1D1D1D",
         }}
+        color="darkGray.main"
       >
         Meow there!
       </Typography>
@@ -23,8 +23,8 @@ const Greeting = () => {
           fontFamily: "Jost",
           fontSize: "20px",
           fontWeight: "400",
-          color: "#8C8C8C",
         }}
+        color="lightGray.main"
       >
         Welcome to cats API
       </Typography>
@@ -34,8 +34,8 @@ const Greeting = () => {
           fontFamily: "Jost",
           fontSize: "20px",
           fontWeight: "500",
-          color: "#1D1D1D",
         }}
+        color="darkGray.main"
       >
         Lets start using The Cat API
       </Typography>
