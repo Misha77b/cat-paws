@@ -1,23 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-
-const boxStyle = {
-  display: "flex",
-  justifyContent: "flex-end",
-  position: "relative",
-};
-
-const backStyle = {
-  position: "absolute",
-  width: "40vw",
-  height: "98vh",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-42%, -50%)",
-  background: "pink",
-  zIndex: "-10",
-  borderRadius: "20px",
-};
+import { boxStyle, backStyle } from "./sxStyles";
 
 const Home = () => {
   return (
