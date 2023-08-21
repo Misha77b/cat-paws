@@ -10,7 +10,7 @@ const Greeting = () => {
           marginBottom: "10px",
           fontFamily: "Jost",
           fontSize: "44px",
-          fontWeight: "500",
+          fontWeight: "fontWeightMedium",
           lieHeight: "58px",
         }}
         color="darkGray.main"
@@ -22,7 +22,7 @@ const Greeting = () => {
           marginBottom: "60px",
           fontFamily: "Jost",
           fontSize: "20px",
-          fontWeight: "400",
+          fontWeight: "fontWeightRegular",
         }}
         color="lightGray.main"
       >
@@ -33,7 +33,7 @@ const Greeting = () => {
           marginBottom: "20px",
           fontFamily: "Jost",
           fontSize: "20px",
-          fontWeight: "500",
+          fontWeight: "fontWeightMedium",
         }}
         color="darkGray.main"
       >

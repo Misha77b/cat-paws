@@ -1,4 +1,4 @@
-import { createTheme, colors } from "@mui/material";
+import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
   palette: {
@@ -18,7 +18,14 @@ export const theme = createTheme({
       main: "#8C8C8C",
     },
   },
-  typography: { fontFamily: "Jost" },
+  typography: {
+    fontFamily: "Jost",
+    fontWeightBold: 700,
+    fontWeightSemiBold: 600,
+    fontWeightMedium: 500,
+    fontWeightRegular: 400,
+    fontWeightLight: 300,
+  },
   components: {
     MuiButton: {
       styleOverrides: {
