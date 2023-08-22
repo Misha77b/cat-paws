@@ -21,9 +21,8 @@ const NavItem = ({ title, color, img, imgAlt, imgSize, link }) => {
         <img style={imgSize} src={img} alt={imgAlt} />
       </Box>
       <NavLink
-        component={NavLink}
         className={({ isActive }) =>
-          isActive ? "nav-box__btn-active" : "nav-box__btn"
+          isActive ? "nav-box nav-box__btn-active" : "nav-box nav-box__btn"
         }
         to={link}
       >

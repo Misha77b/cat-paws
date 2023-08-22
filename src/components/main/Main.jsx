@@ -9,11 +9,18 @@ import Navigation from "../naviagtion/Navigation";
 const Main = () => {
   return (
     <Box>
-      <Header />
-      <Box>
-        <Greeting />
-        {/* Nav icons */}
-        <Navigation />
+      <Box
+        sx={{
+          position: "fixed",
+          left: "8%",
+          top: "30px",
+        }}
+      >
+        <Header />
+        <Box>
+          <Greeting />
+          <Navigation />
+        </Box>
       </Box>
     </Box>
   );

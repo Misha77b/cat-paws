@@ -1,4 +1,4 @@
-.nav-box__btn {
+.nav-box {
   display: inline-block;
   margin-top: 10px;
   text-align: center;
@@ -8,6 +8,11 @@
   background: #fff;
   border-radius: 10px;
   text-decoration: none;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2px;
 }
 
 .nav-box__btn:hover {
@@ -15,13 +20,6 @@
 }
 
 .nav-box__btn-active {
-  display: inline-block;
-  margin-top: 10px;
-  text-align: center;
-  width: 138px;
-  padding: 10px 0;
-  border-radius: 10px;
   color: #fff;
   background: #ff868e;
-  text-decoration: none;
 }

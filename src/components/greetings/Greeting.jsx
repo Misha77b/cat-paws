@@ -10,10 +10,10 @@ const Greeting = () => {
           marginBottom: "10px",
           fontFamily: "Jost",
           fontSize: "44px",
-          fontWeight: "500",
+          fontWeight: "fontWeightMedium",
           lieHeight: "58px",
-          color: "#1D1D1D",
         }}
+        color="secondary"
       >
         Meow there!
       </Typography>
@@ -22,9 +22,9 @@ const Greeting = () => {
           marginBottom: "60px",
           fontFamily: "Jost",
           fontSize: "20px",
-          fontWeight: "400",
-          color: "#8C8C8C",
+          fontWeight: "fontWeightRegular",
         }}
+        color="lightGray.main"
       >
         Welcome to cats API
       </Typography>
@@ -33,9 +33,9 @@ const Greeting = () => {
           marginBottom: "20px",
           fontFamily: "Jost",
           fontSize: "20px",
-          fontWeight: "500",
-          color: "#1D1D1D",
+          fontWeight: "fontWeightMedium",
         }}
+        color="secondary"
       >
         Lets start using The Cat API
       </Typography>
