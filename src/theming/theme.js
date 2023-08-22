@@ -34,6 +34,11 @@ export const theme = createTheme({
     MuiIconButton: {
       styleOverrides: {
         root: {
+          width: 60,
+          height: 60,
+          padding: 0,
+          color: "#FF868E",
+          background: "#FFF",
           borderRadius: 20,
         },
       },

@@ -7,7 +7,8 @@ const Search = () => {
     <Box
       sx={{
         position: "relative",
-        maxWidth: "470px",
+        width: "470px",
+        // maxWidth: "470px",
       }}
     >
       <TextField fullWidth placeholder="Search for breeds by name" />
