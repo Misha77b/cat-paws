@@ -38,5 +38,39 @@ export const theme = createTheme({
         },
       },
     },
+    MuiInputBase: {
+      styleOverrides: {
+        input: {
+          color: "#1D1D1D",
+          fontFamily: "Jost",
+          fontSize: "20px",
+          fontWeight: "400",
+          borderRadius: 20,
+          background: "#FFF",
+          "&::placeholder": {
+            color: "#8C8C8C",
+            fontFamily: "Jost",
+            fontSize: "20px",
+            fontWeight: "400",
+          },
+          //   "& Mui-focused": {
+          //     border: "2px solid #FF868E",
+          //   },
+        },
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          border: "transparent",
+          "& .MuiInputBase-root": {
+            borderRadius: 20,
+          },
+          "& .MuiInputBase-input": {
+            padding: "15px 20px 15px 20px",
+          },
+        },
+      },
+    },
   },
 });

@@ -15,19 +15,18 @@ const Search = () => {
     >
       <TextField
         fullWidth
-        sx={{
-          "& .MuiInputBase-input": {
-            p: "15px 20px",
-            borderRadius: `20px`,
-            background: "#fff",
-          },
-          "& .MuiOutlinedInput-root": {
-            "& fieldset": {
-              borderRadius: `20px`,
-              //   border: "transparent",
-            },
-          },
-        }}
+        // sx={{
+        //   "& .MuiInputBase-input": {
+        //     // p: "15px 20px",
+        //     // borderRadius: `20px`,
+        //     background: "#fff",
+        //   },
+        //   "& .MuiOutlinedInput-root": {
+        //     "& fieldset": {
+        //       //   borderRadius: `20px`,
+        //     },
+        //   },
+        // }}
         placeholder="Search for breeds by name"
       />
       <IconButton
@@ -35,7 +34,7 @@ const Search = () => {
           position: "absolute",
           top: "50%",
           transform: "translateY(-50%)",
-          right: "20px",
+          right: "10px",
           width: "40px",
           height: "40px",
           background: "mistyRose",
