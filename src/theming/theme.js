@@ -62,12 +62,23 @@ export const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          border: "transparent",
+          //   border: "transparent",
           "& .MuiInputBase-root": {
             borderRadius: 20,
           },
           "& .MuiInputBase-input": {
             padding: "15px 20px 15px 20px",
+          },
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "transparent",
+            },
+            "&:hover fieldset": {
+              borderColor: "#FF868E",
+            },
+            "&.Mui-focused fieldset": {
+              borderColor: "#FF868E",
+            },
           },
         },
       },
