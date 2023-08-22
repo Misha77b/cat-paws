@@ -1,10 +1,13 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import RootRouter from "./RootRouter";
 import Home from "../pages/home/Home";
 import Voting from "../pages/voting/Voting";
 import Breeds from "../pages/breeds/Breeds";
 import Gallary from "../pages/gallary/Gallary";
+import Likes from "../pages/likes/Likes";
+import Favourites from "../pages/favourites/Favourites";
+import Dislikes from "../pages/dislikes/Dislikes";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +29,18 @@ export const router = createBrowserRouter([
       {
         path: "/gallary",
         element: <Gallary />,
+      },
+      {
+        path: "/likes",
+        element: <Likes />,
+      },
+      {
+        path: "/favourites",
+        element: <Favourites />,
+      },
+      {
+        path: "/dislikes",
+        element: <Dislikes />,
       },
     ],
   },

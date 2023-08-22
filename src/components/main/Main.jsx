@@ -2,7 +2,7 @@ import React from "react";
 // MUI components
 import { Box } from "@mui/material";
 // components
-import Header from "../header/Header";
+import Logo from "../logo/Logo";
 import Greeting from "../greetings/Greeting";
 import Navigation from "../naviagtion/Navigation";
 
@@ -16,7 +16,7 @@ const Main = () => {
           top: "30px",
         }}
       >
-        <Header />
+        <Logo />
         <Box>
           <Greeting />
           <Navigation />
