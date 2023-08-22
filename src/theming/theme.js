@@ -53,16 +53,12 @@ export const theme = createTheme({
             fontSize: "20px",
             fontWeight: "400",
           },
-          //   "& Mui-focused": {
-          //     border: "2px solid #FF868E",
-          //   },
         },
       },
     },
     MuiTextField: {
       styleOverrides: {
         root: {
-          //   border: "transparent",
           "& .MuiInputBase-root": {
             borderRadius: 20,
           },

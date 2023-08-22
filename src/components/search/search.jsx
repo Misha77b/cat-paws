@@ -8,27 +8,9 @@ const Search = () => {
       sx={{
         position: "relative",
         maxWidth: "470px",
-        // "& .MuiTextField-root": {
-        //   borderRadius: "20px",
-        // },
       }}
     >
-      <TextField
-        fullWidth
-        // sx={{
-        //   "& .MuiInputBase-input": {
-        //     // p: "15px 20px",
-        //     // borderRadius: `20px`,
-        //     background: "#fff",
-        //   },
-        //   "& .MuiOutlinedInput-root": {
-        //     "& fieldset": {
-        //       //   borderRadius: `20px`,
-        //     },
-        //   },
-        // }}
-        placeholder="Search for breeds by name"
-      />
+      <TextField fullWidth placeholder="Search for breeds by name" />
       <IconButton
         sx={{
           position: "absolute",
