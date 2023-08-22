@@ -13,7 +13,7 @@ const Greeting = () => {
           fontWeight: "fontWeightMedium",
           lieHeight: "58px",
         }}
-        color="darkGray.main"
+        color="secondary"
       >
         Meow there!
       </Typography>
@@ -35,7 +35,7 @@ const Greeting = () => {
           fontSize: "20px",
           fontWeight: "fontWeightMedium",
         }}
-        color="darkGray.main"
+        color="secondary"
       >
         Lets start using The Cat API
       </Typography>

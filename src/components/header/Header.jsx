@@ -14,10 +14,11 @@ const Header = () => {
       />
       <Typography
         sx={{
-          fontWeight: "700",
+          fontFamily: "Montserrat",
+          fontWeight: "fontWeightBold",
           fontSize: "18px",
         }}
-        color="darkGray.main"
+        color="secondary"
       >
         PetsPaw
       </Typography>

@@ -5,21 +5,18 @@ export const theme = createTheme({
     primary: {
       main: "#FF868E",
     },
-    // secondary: {
-    //   main: "#FF868E",
-    // },
-    mistyRose: {
-      main: "#F8F8F7",
-    },
-    darkGray: {
+    secondary: {
       main: "#1D1D1D",
+    },
+    mistyRose: {
+      main: "#FBE0DC",
     },
     lightGray: {
       main: "#8C8C8C",
     },
   },
   typography: {
-    fontFamily: "Jost",
+    fontFamily: ["Jost", "Monserrat"],
     fontWeightBold: 700,
     fontWeightSemiBold: 600,
     fontWeightMedium: 500,
