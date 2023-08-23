@@ -22,7 +22,6 @@ const Search = () => {
       sx={{
         position: "relative",
         width: "470px",
-        // maxWidth: "470px",
       }}
     >
       <TextField fullWidth placeholder="Search for breeds by name" />
