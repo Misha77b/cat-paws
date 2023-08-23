@@ -1,11 +1,11 @@
 import { Box } from "@mui/system";
 import React from "react";
-import Header from "../../components/header/Header";
+// import Header from "../../components/header/Header";
 
 const Voting = () => {
   return (
     <Box>
-      <Header />
+      {/* <Header /> */}
       Voting
     </Box>
   );
