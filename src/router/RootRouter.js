@@ -16,6 +16,7 @@ const RootRouter = () => {
         <Main />
       </Grid>
       <Grid item xs={6}>
+        {/* temporary descision for header render */}
         {location === "/" ? null : <Header />}
         <Outlet />
       </Grid>
