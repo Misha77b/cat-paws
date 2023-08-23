@@ -1,0 +1,21 @@
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ff868e;
+  background: #fff;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.nav-icon__btn:hover {
+  background: #fbe0dc;
+}
+
+.nav-icon__btn-active {
+  color: #fff;
+  background: #ff868e;
+}

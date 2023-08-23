@@ -31,13 +31,18 @@ export const theme = createTheme({
         },
       },
     },
-    MuiIconButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 20,
-        },
-      },
-    },
+    // MuiIconButton: {
+    //   styleOverrides: {
+    //     root: {
+    //       width: 60,
+    //       height: 60,
+    //       padding: 0,
+    //       color: "#FF868E",
+    //       background: "#FFF",
+    //       borderRadius: 20,
+    //     },
+    //   },
+    // },
     MuiInputBase: {
       styleOverrides: {
         input: {
