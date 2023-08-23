@@ -32,11 +32,6 @@ const NavIcons = () => {
       >
         <SentimentVeryDissatisfiedIcon sx={{ width: "35px", height: "35px" }} />
       </NavLink>
-      {/* <IconButton>
-        <SentimentSatisfiedAltIcon sx={{ width: "30px", height: "30px" }} />
-      </IconButton>
-      <IconButton></IconButton>
-      <IconButton></IconButton> */}
     </>
   );
 };
