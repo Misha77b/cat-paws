@@ -8,11 +8,13 @@ import Gallary from "../pages/gallary/Gallary";
 import Likes from "../pages/likes/Likes";
 import Favourites from "../pages/favourites/Favourites";
 import Dislikes from "../pages/dislikes/Dislikes";
+import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <RootRouter />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: "/",
