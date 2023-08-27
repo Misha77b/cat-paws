@@ -4,20 +4,13 @@ const PawIcon = () => {
   return (
     <>
       <svg
-        width="300"
-        height="300"
+        width="175"
+        height="175"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="300" height="300" fill="#E5E5E5" />
         <g id="Home" clipPath="url(#clip0_0_1)">
-          <rect
-            width="1440"
-            height="900"
-            transform="translate(-121 -38)"
-            fill="#F8F8F7"
-          />
           <g id="Logo">
             <g id="Group 20">
               <g id="Group 18">
@@ -55,16 +48,6 @@ const PawIcon = () => {
             </g>
           </g>
         </g>
-        <defs>
-          <clipPath id="clip0_0_1">
-            <rect
-              width="1440"
-              height="900"
-              fill="white"
-              transform="translate(-121 -38)"
-            />
-          </clipPath>
-        </defs>
       </svg>
     </>
   );

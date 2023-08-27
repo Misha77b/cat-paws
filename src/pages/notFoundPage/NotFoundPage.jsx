@@ -1,24 +1,21 @@
 import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import PawIcon from "./PawIcon";
+import { notFoundBoxSx, oopsSx, errSx, homeBtnSx } from "./sxStyle";
 
 const NotFoundPage = () => {
   return (
-    <Grid
-      container
-      justifyContent="center"
-      alignItems="center"
-      height="100vh"
-      width="100vw"
-      spacing={{ xs: 2 }}
-    >
-      <Grid item xs="6">
-        <Typography variant="h2">Such page doesn't exist</Typography>
-      </Grid>
-      <Grid item xs="6">
-        <PawIcon />
-      </Grid>
-    </Grid>
+    <Box sx={notFoundBoxSx}>
+      <PawIcon />
+      <Typography sx={oopsSx} variant="h2">
+        OOPS!
+      </Typography>
+      <Typography sx={errSx}>Error 404! Page not found</Typography>
+      <Button component={Link} to="/" sx={homeBtnSx}>
+        Home page
+      </Button>
+    </Box>
   );
 };
 
