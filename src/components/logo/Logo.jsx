@@ -1,19 +1,16 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import LogoIcon from "./LogoIcon";
 
 const Logo = () => {
   return (
-    <Box
-      sx={{ display: "flex", gap: "8px", marginBottom: "75px" }}
-      className="logo"
-    >
-      <img
-        style={{ width: "24px", height: "24px" }}
-        src="./assets/logo-paw.png"
-        alt="logo"
-      />
-      <Link style={{ textDecoration: "none" }} to="/">
+    <Link style={{ textDecoration: "none" }} to="/">
+      <Box
+        sx={{ display: "flex", gap: "8px", marginBottom: "75px" }}
+        className="logo"
+      >
+        <LogoIcon />
         <Typography
           sx={{
             fontFamily: "Montserrat",
@@ -24,8 +21,8 @@ const Logo = () => {
         >
           PetsPaw
         </Typography>
-      </Link>
-    </Box>
+      </Box>
+    </Link>
   );
 };
 
