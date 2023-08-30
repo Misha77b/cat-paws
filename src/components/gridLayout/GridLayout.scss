@@ -1,0 +1,100 @@
+.grid-container {
+  display: grid;
+  //   max ot simple width
+  max-width: 680px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(140px, auto);
+  gap: 20px;
+}
+
+.grid-item {
+  border-radius: 20px;
+}
+
+.grid-container > .item1 {
+  background: red;
+  grid-row: span 2;
+}
+
+.grid-container > .item2 {
+  background: yellow;
+}
+
+.grid-container > .item3 {
+  background: blue;
+}
+
+.grid-container > .item4 {
+  background: green;
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+.grid-container > .item5 {
+  background: black;
+}
+
+.grid-container > .item6 {
+  background: red;
+}
+
+.grid-container > .item7 {
+  background: yellow;
+}
+
+.grid-container > .item8 {
+  background: blue;
+  grid-row: span 2;
+}
+
+.grid-container > .item9 {
+  background: green;
+  grid-area: 5 / 1 / 7 / 3;
+}
+
+.grid-container > .item10 {
+  background: black;
+}
+
+.grid-container > .item11 {
+  background: red;
+  grid-row: span 2;
+}
+
+.grid-container > .item12 {
+  background: yellow;
+}
+
+.grid-container > .item13 {
+  background: blue;
+}
+
+.grid-container > .item14 {
+  background: green;
+  grid-area: 8 / 2 / 10 / 4;
+}
+
+.grid-container > .item15 {
+  background: black;
+}
+
+.grid-container > .item16 {
+  background: red;
+}
+
+.grid-container > .item17 {
+  background: yellow;
+}
+
+.grid-container > .item18 {
+  background: blue;
+  grid-row: span 2;
+}
+
+.grid-container > .item19 {
+  background: green;
+  grid-area: 11 / 1 / 13 / 3;
+}
+
+.grid-container > .item20 {
+  background: black;
+}
