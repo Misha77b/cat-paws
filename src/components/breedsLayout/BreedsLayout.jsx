@@ -15,6 +15,16 @@ const BreedsLayout = () => {
       <Box className="grid-item item8"></Box>
       <Box className="grid-item item9"></Box>
       <Box className="grid-item item10"></Box>
+      <Box className="grid-item item11"></Box>
+      <Box className="grid-item item12"></Box>
+      <Box className="grid-item item13"></Box>
+      <Box className="grid-item item14"></Box>
+      <Box className="grid-item item15"></Box>
+      <Box className="grid-item item16"></Box>
+      <Box className="grid-item item17"></Box>
+      <Box className="grid-item item18"></Box>
+      <Box className="grid-item item19"></Box>
+      <Box className="grid-item item20"></Box>
     </Box>
   );
 };
