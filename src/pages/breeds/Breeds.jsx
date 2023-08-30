@@ -5,7 +5,6 @@ import { fetchBreeds } from "../../store/reducers/breedsSlice";
 // components
 import { Box } from "@mui/material";
 import GridLayout from "../../components/gridLayout/GridLayout";
-import Loader from "../../components/loader/Loader";
 
 const Breeds = () => {
   const dispatch = useDispatch();
@@ -20,7 +19,6 @@ const Breeds = () => {
   return (
     <Box>
       Breeds
-      <Loader />
       <GridLayout />
     </Box>
   );
