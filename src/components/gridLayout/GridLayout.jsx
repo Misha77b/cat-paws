@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
-import "./BreedsLayout.scss";
+import "./GridLayout.scss";
 
-const BreedsLayout = () => {
+const GridLayout = () => {
   return (
     <Box className="grid-container">
       <Box className="grid-item item1"></Box>
@@ -29,4 +29,4 @@ const BreedsLayout = () => {
   );
 };
 
-export default BreedsLayout;
+export default GridLayout;
