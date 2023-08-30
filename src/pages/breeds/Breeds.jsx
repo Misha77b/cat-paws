@@ -8,7 +8,6 @@ import GridLayout from "../../components/gridLayout/GridLayout";
 
 const Breeds = () => {
   const dispatch = useDispatch();
-  null.toString();
 
   const breeds = useSelector((state) => state.breedsReducer.breedsData);
   console.log(breeds);
