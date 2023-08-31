@@ -3,12 +3,22 @@ import { Box } from "@mui/material";
 import "./GridLayout.scss";
 import GridLayoutItem from "../gridLayoutItem/GridLayoutItem";
 
-const GridLayout = () => {
+const GridLayout = ({ breeds }) => {
+  console.log(breeds);
   return (
     <Box className="grid-container">
-      <GridLayoutItem button="btn text" />
+      {breeds.map((item, index) => {
+        return (
+          <GridLayoutItem
+            imgUrl={item.image.url}
+            button={item.name}
+            itemIndex={`item${index + 1}`}
+          />
+        );
+      })}
+
       {/* <Box className="grid-item item1"></Box> */}
-      <Box className="grid-item item2"></Box>
+      {/* <Box className="grid-item item2"></Box>
       <Box className="grid-item item3"></Box>
       <Box className="grid-item item4"></Box>
       <Box className="grid-item item5"></Box>
@@ -26,7 +36,7 @@ const GridLayout = () => {
       <Box className="grid-item item17"></Box>
       <Box className="grid-item item18"></Box>
       <Box className="grid-item item19"></Box>
-      <Box className="grid-item item20"></Box>
+      <Box className="grid-item item20"></Box> */}
     </Box>
   );
 };

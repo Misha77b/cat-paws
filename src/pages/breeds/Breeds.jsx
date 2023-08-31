@@ -10,7 +10,7 @@ const Breeds = () => {
   const dispatch = useDispatch();
 
   const breeds = useSelector((state) => state.breedsReducer.breedsData);
-  console.log(breeds);
+  //   console.log(breeds);
 
   useEffect(() => {
     dispatch(fetchBreeds());
@@ -19,7 +19,7 @@ const Breeds = () => {
   return (
     <Box>
       Breeds
-      <GridLayout />
+      <GridLayout breeds={breeds} />
     </Box>
   );
 };

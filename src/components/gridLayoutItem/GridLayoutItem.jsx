@@ -1,26 +1,25 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 
-const GridLayoutItem = ({ button }) => {
+const GridLayoutItem = ({ itemIndex, imgUrl, button }) => {
   return (
     <Box
-      className="grid-item item1"
+      className={`grid-item ${itemIndex}`}
       sx={{
         position: "relative",
         "&:hover .card-cover": {
           display: "flex",
-          transition: "0.4s",
         },
       }}
     >
       <img
         style={{
           borderRadius: "inherit",
-          //   objectFit: "contain",
+          objectFit: "cover",
           width: "100%",
           height: "100%",
         }}
-        src="https://i.pinimg.com/236x/0f/14/75/0f14755243496a2f66bcf3d7f14c2e5d.jpg"
+        src={imgUrl}
         alt="alt"
       />
       <Box
@@ -36,7 +35,6 @@ const GridLayoutItem = ({ button }) => {
           background: "rgba(255, 134, 142, 0.60)",
           borderRadius: "inherit",
           display: "none",
-          transition: "0.4s",
         }}
       >
         <Button
