@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 // fetch
 import { fetchBreeds } from "../../store/reducers/breedsSlice";
 // components
+import { Box } from "@mui/material";
 import GridLayout from "../../components/gridLayout/GridLayout";
 
 const Breeds = () => {
@@ -16,10 +17,10 @@ const Breeds = () => {
   }, []);
 
   return (
-    <div>
+    <Box>
       Breeds
       <GridLayout />
-    </div>
+    </Box>
   );
 };
 

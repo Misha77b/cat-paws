@@ -17,8 +17,9 @@ export const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/",
+        // path: "/",
         element: <Home />,
+        index: true,
       },
       {
         path: "/voting",
