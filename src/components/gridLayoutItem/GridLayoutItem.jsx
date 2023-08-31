@@ -7,7 +7,7 @@ const GridLayoutItem = () => {
       <img
         style={{
           borderRadius: "inherit",
-          objectFit: "content",
+          //   objectFit: "content",
           width: "100%",
           height: "100%",
         }}
