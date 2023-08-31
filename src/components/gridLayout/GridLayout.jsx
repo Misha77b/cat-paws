@@ -1,11 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
 import "./GridLayout.scss";
+import GridLayoutItem from "../gridLayoutItem/GridLayoutItem";
 
 const GridLayout = () => {
   return (
     <Box className="grid-container">
-      <Box className="grid-item item1"></Box>
+      <GridLayoutItem />
+      {/* <Box className="grid-item item1"></Box> */}
       <Box className="grid-item item2"></Box>
       <Box className="grid-item item3"></Box>
       <Box className="grid-item item4"></Box>

@@ -9,7 +9,8 @@ export const fetchBreeds = createAsyncThunk("breeds/fetchData", async () => {
   const response = await fetch(
     // limit is changeble 1-100, path as parametr
     // `https://api.thecatapi.com/v1/images/search?limit=${limitNum}`,
-    `https://api.thecatapi.com/v1/images/search?limit=10`,
+    // `https://api.thecatapi.com/v1/images/search?limit=10`,
+    `https://api.thecatapi.com/v1/breeds?limit=10`,
     {
       method: "GET",
       headers: {
