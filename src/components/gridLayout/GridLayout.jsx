@@ -6,7 +6,7 @@ import GridLayoutItem from "../gridLayoutItem/GridLayoutItem";
 const GridLayout = () => {
   return (
     <Box className="grid-container">
-      <GridLayoutItem />
+      <GridLayoutItem button="btn text" />
       {/* <Box className="grid-item item1"></Box> */}
       <Box className="grid-item item2"></Box>
       <Box className="grid-item item3"></Box>
