@@ -1,8 +1,7 @@
 .grid-container {
   display: grid;
-  //   max ot simple width
-  max-width: 680px;
-  grid-template-columns: repeat(3, 1fr);
+  //   max or simple width
+  grid-template-columns: 200px 200px 200px;
   grid-auto-rows: minmax(140px, auto);
   gap: 20px;
 }

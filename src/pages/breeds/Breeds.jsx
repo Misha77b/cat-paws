@@ -17,8 +17,15 @@ const Breeds = () => {
   }, []);
 
   return (
-    <Box>
-      Breeds
+    <Box
+      sx={{
+        width: "640px",
+        padding: "20px",
+        borderRadius: "20px",
+        background: "#FFF",
+      }}
+    >
+      {/* Breeds */}
       <GridLayout breeds={breeds} />
     </Box>
   );
