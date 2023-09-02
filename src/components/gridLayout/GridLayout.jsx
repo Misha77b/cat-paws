@@ -17,8 +17,8 @@ const GridLayout = ({ breeds }) => {
         );
       })}
 
-      {/* <Box className="grid-item item1"></Box> */}
-      {/* <Box className="grid-item item2"></Box>
+      {/* <Box className="grid-item item1"></Box>
+      <Box className="grid-item item2"></Box>
       <Box className="grid-item item3"></Box>
       <Box className="grid-item item4"></Box>
       <Box className="grid-item item5"></Box>
