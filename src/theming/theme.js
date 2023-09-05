@@ -28,6 +28,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 10,
+          fontFamily: "Jost",
         },
       },
     },

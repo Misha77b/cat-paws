@@ -1,6 +1,5 @@
 .grid-container {
   display: grid;
-  //   max or simple width
   grid-template-columns: 200px 200px 200px;
   grid-auto-rows: 140px;
   gap: 20px;
@@ -11,37 +10,37 @@
 }
 
 .grid-container > .item1 {
-  background: red;
+  //   background: red;
   grid-row: span 2;
 }
 
-.grid-container > .item2 {
-  background: yellow;
-}
+// .grid-container > .item2 {
+//   background: yellow;
+// }
 
-.grid-container > .item3 {
-  background: blue;
-}
+// .grid-container > .item3 {
+//   background: blue;
+// }
 
 .grid-container > .item4 {
-  background: green;
+  //   background: green;
   grid-area: 2 / 2 / 4 / 4;
 }
 
-.grid-container > .item5 {
-  background: black;
-}
+// .grid-container > .item5 {
+//   background: black;
+// }
 
-.grid-container > .item6 {
-  background: red;
-}
+// .grid-container > .item6 {
+//   background: red;
+// }
 
-.grid-container > .item7 {
-  background: yellow;
-}
+// .grid-container > .item7 {
+//   background: yellow;
+// }
 
 .grid-container > .item8 {
-  background: blue;
+  //   background: blue;
   grid-row: span 2;
 }
 
@@ -50,50 +49,50 @@
   grid-area: 5 / 1 / 7 / 3;
 }
 
-.grid-container > .item10 {
-  background: black;
-}
+// .grid-container > .item10 {
+//   background: black;
+// }
 
 .grid-container > .item11 {
-  background: red;
+  //   background: red;
   grid-row: span 2;
 }
 
-.grid-container > .item12 {
-  background: yellow;
-}
+// .grid-container > .item12 {
+//   background: yellow;
+// }
 
-.grid-container > .item13 {
-  background: blue;
-}
+// .grid-container > .item13 {
+//   background: blue;
+// }
 
 .grid-container > .item14 {
-  background: green;
+  //   background: green;
   grid-area: 8 / 2 / 10 / 4;
 }
 
-.grid-container > .item15 {
-  background: black;
-}
+// .grid-container > .item15 {
+//   background: black;
+// }
 
-.grid-container > .item16 {
-  background: red;
-}
+// .grid-container > .item16 {
+//   background: red;
+// }
 
-.grid-container > .item17 {
-  background: yellow;
-}
+// .grid-container > .item17 {
+//   background: yellow;
+// }
 
 .grid-container > .item18 {
-  background: blue;
+  //   background: blue;
   grid-row: span 2;
 }
 
 .grid-container > .item19 {
-  background: green;
+  //   background: green;
   grid-area: 11 / 1 / 13 / 3;
 }
 
-.grid-container > .item20 {
-  background: black;
-}
+// .grid-container > .item20 {
+//   background: black;
+// }
