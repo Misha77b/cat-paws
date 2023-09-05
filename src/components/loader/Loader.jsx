@@ -1,9 +1,10 @@
 import React from "react";
+import { Box } from "@mui/material";
 import "./Loader.scss";
 
 const Loader = () => {
   return (
-    <main>
+    <Box className="main">
       <svg
         class="ip"
         viewBox="0 0 256 128"
@@ -46,7 +47,7 @@ const Loader = () => {
           </g>
         </g>
       </svg>
-    </main>
+    </Box>
   );
 };
 

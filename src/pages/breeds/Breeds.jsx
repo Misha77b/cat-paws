@@ -1,16 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // fetch
 import { fetchBreeds } from "../../store/reducers/breedsSlice";
 // components
 import { Box } from "@mui/material";
+import Loader from "../../components/loader/Loader";
 import GridLayout from "../../components/gridLayout/GridLayout";
 
 const Breeds = () => {
   const dispatch = useDispatch();
 
+  const loading = useSelector((state) => state.breedsReducer.loader);
   const breeds = useSelector((state) => state.breedsReducer.breedsData);
-  //   console.log(breeds);
+  console.log(loading);
 
   useEffect(() => {
     dispatch(fetchBreeds());
@@ -26,7 +28,7 @@ const Breeds = () => {
       }}
     >
       {/* Breeds */}
-      <GridLayout breeds={breeds} />
+      {loading ? <Loader /> : <GridLayout breeds={breeds} />}
     </Box>
   );
 };
