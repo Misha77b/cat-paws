@@ -7,7 +7,6 @@ const GridLayout = ({ breeds }) => {
   return (
     <Box className="grid-container">
       {breeds.map((item, index) => {
-        console.log(item.id);
         return (
           <GridLayoutItem
             key={item.id}
