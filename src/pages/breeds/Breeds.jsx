@@ -6,6 +6,7 @@ import useLocationParams from "../../hooks/useLocationParams";
 import { fetchBreeds } from "../../store/reducers/breedsSlice";
 // components
 import { Box } from "@mui/material";
+import LocationAndBackBtns from "../../components/locationAndBackBtns/LocationAndBackBtns";
 import Loader from "../../components/loader/Loader";
 import GridLayout from "../../components/gridLayout/GridLayout";
 
@@ -31,6 +32,12 @@ const Breeds = () => {
         background: "#FFF",
       }}
     >
+      <Box
+        className="page-control"
+        sx={{ marginBottom: "20px", display: "flex", gap: "10px" }}
+      >
+        <LocationAndBackBtns />
+      </Box>
       {/* Breeds */}
       {loading ? <Loader /> : <GridLayout breeds={breeds} />}
     </Box>
