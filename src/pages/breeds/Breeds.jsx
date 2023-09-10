@@ -9,6 +9,7 @@ import { Box } from "@mui/material";
 import LocationAndBackBtns from "../../components/locationAndBackBtns/LocationAndBackBtns";
 import Loader from "../../components/loader/Loader";
 import GridLayout from "../../components/gridLayout/GridLayout";
+import FilterByBreeds from "./components/filterByBreeds/FilterByBreeds";
 
 const Breeds = () => {
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ const Breeds = () => {
         sx={{ marginBottom: "20px", display: "flex", gap: "10px" }}
       >
         <LocationAndBackBtns />
+        <FilterByBreeds />
       </Box>
       {/* Breeds */}
       {loading ? <Loader /> : <GridLayout breeds={breeds} />}

@@ -85,5 +85,25 @@ export const theme = createTheme({
         },
       },
     },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: "10px 10px 30px 30px",
+        },
+      },
+    },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          ".MuiMenuItem-root": {
+            fontFamily: "Jost",
+            color: "#8C8C8C",
+            fontWeight: "400",
+            fontSize: "16px",
+            lineHeight: "24px",
+          },
+        },
+      },
+    },
   },
 });
