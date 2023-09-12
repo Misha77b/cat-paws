@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TextField, MenuItem } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const FilterByBreeds = () => {
   const [breed, setBreed] = useState("");
@@ -10,11 +11,13 @@ const FilterByBreeds = () => {
 
   return (
     <TextField
-      className="scroll"
       select
       value={breed}
       displayEmpty
       onChange={handleChange}
+      SelectProps={{
+        IconComponent: KeyboardArrowDownIcon,
+      }}
       sx={{
         height: "40px",
         height: "40px",

@@ -52,7 +52,6 @@ export const theme = createTheme({
           fontSize: "20px",
           fontWeight: "400",
           borderRadius: 20,
-          background: "#FFF",
           "&::placeholder": {
             color: "#8C8C8C",
             fontFamily: "Jost",
@@ -67,6 +66,10 @@ export const theme = createTheme({
         root: {
           "& .MuiInputBase-root": {
             borderRadius: 20,
+            fontFamily: "Jost",
+            color: "#8C8C8C",
+            fontWeight: "400",
+            fontSize: "16px",
           },
           "& .MuiInputBase-input": {
             padding: "15px 20px 15px 20px",
@@ -80,6 +83,12 @@ export const theme = createTheme({
             },
             "&.Mui-focused fieldset": {
               borderColor: "#FF868E",
+            },
+            "& .MuiSelect-select": {
+              padding: "8px 10px",
+              color: "#8C8C8C",
+              fontWeight: "400",
+              fontSize: "16px",
             },
           },
         },

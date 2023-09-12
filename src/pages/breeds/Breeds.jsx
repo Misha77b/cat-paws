@@ -10,6 +10,7 @@ import LocationAndBackBtns from "../../components/locationAndBackBtns/LocationAn
 import Loader from "../../components/loader/Loader";
 import GridLayout from "../../components/gridLayout/GridLayout";
 import FilterByBreeds from "./components/filterByBreeds/FilterByBreeds";
+import LimitItems from "./components/limitItems/LimitItems";
 
 const Breeds = () => {
   const dispatch = useDispatch();
@@ -39,6 +40,7 @@ const Breeds = () => {
       >
         <LocationAndBackBtns />
         <FilterByBreeds />
+        <LimitItems />
       </Box>
       {/* Breeds */}
       {loading ? <Loader /> : <GridLayout breeds={breeds} />}
