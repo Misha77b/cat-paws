@@ -88,13 +88,28 @@ export const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: "10px 10px 30px 30px",
+          borderRadius: "10px",
+          maxHeight: "400px",
+          overflow: "hidden visible",
+          "::-webkit-scrollbar": {
+            width: "10px",
+            maxHeight: "40px",
+          },
+          "::-webkit-scrollbar-track": {
+            borderRadius: "0 10px 10px 0",
+            backgroundColor: "#F8F8F7",
+          },
+          "::-webkit-scrollbar-thumb": {
+            borderRadius: "30px",
+            boxShadow: "inset 0 0 20px #FF868E",
+          },
         },
       },
     },
     MuiList: {
       styleOverrides: {
         root: {
+          maxHeight: "300px",
           ".MuiMenuItem-root": {
             fontFamily: "Jost",
             color: "#8C8C8C",

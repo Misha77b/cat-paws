@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { TextField, MenuItem } from "@mui/material";
-// import Select from "@mui/material/Select";
 
 const FilterByBreeds = () => {
   const [breed, setBreed] = useState("");
@@ -11,6 +10,7 @@ const FilterByBreeds = () => {
 
   return (
     <TextField
+      className="scroll"
       select
       value={breed}
       displayEmpty
@@ -25,30 +25,14 @@ const FilterByBreeds = () => {
           height: "inherit",
           borderRadius: "10px",
         },
-        ".MuiSelect-select": {
-          padding: "0 0 0 10px",
-          background: "#F8F8F7",
-        },
-        ".MuiPaper-root": {
-          borderRadius: "30px",
-        },
       }}
     >
-      {/* <Select
-        sx={{
-          padding: "0",
-          height: "40px",
-          borderRadius: "10px",
-          background: "#F8F8F7",
-        }}
-      > */}
       <MenuItem default value={null}>
         All breeds
       </MenuItem>
       <MenuItem value={10}>Ten</MenuItem>
       <MenuItem value={20}>Twenty</MenuItem>
       <MenuItem value={30}>Thirty</MenuItem>
-      {/* </Select> */}
     </TextField>
   );
 };
