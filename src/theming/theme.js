@@ -72,6 +72,7 @@ export const theme = createTheme({
             fontSize: "16px",
           },
           "& .MuiInputBase-input": {
+            background: "#FFF",
             padding: "15px 20px 15px 20px",
           },
           "& .MuiOutlinedInput-root": {

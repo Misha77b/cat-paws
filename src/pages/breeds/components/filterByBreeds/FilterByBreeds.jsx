@@ -3,7 +3,7 @@ import { TextField, MenuItem } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const FilterByBreeds = () => {
-  const [breed, setBreed] = useState("");
+  const [breed, setBreed] = useState(10);
 
   const handleChange = (event) => {
     setBreed(event.target.value);
@@ -13,7 +13,6 @@ const FilterByBreeds = () => {
     <TextField
       select
       value={breed}
-      displayEmpty
       onChange={handleChange}
       SelectProps={{
         IconComponent: KeyboardArrowDownIcon,
@@ -27,6 +26,9 @@ const FilterByBreeds = () => {
           width: "226px",
           height: "inherit",
           borderRadius: "10px",
+        },
+        "& .MuiInputBase-input": {
+          background: "#F8F8F7",
         },
       }}
     >

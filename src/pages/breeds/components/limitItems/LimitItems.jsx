@@ -3,7 +3,7 @@ import { TextField, MenuItem } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const LimitItems = () => {
-  const [limit, setLimit] = useState("Limit: 10");
+  const [limit, setLimit] = useState("10");
 
   const handleChange = (event) => {
     setLimit(event.target.value);
@@ -13,7 +13,6 @@ const LimitItems = () => {
     <TextField
       select
       value={limit}
-      displayEmpty
       onChange={handleChange}
       SelectProps={{
         IconComponent: KeyboardArrowDownIcon,
@@ -27,6 +26,9 @@ const LimitItems = () => {
           width: "101px",
           height: "inherit",
           borderRadius: "10px",
+        },
+        "& .MuiInputBase-input": {
+          background: "#F8F8F7",
         },
       }}
     >
