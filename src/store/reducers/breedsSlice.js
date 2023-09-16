@@ -5,24 +5,30 @@ const initialState = {
   loader: true,
 };
 
-export const fetchBreeds = createAsyncThunk("breeds/fetchData", async () => {
-  const response = await fetch(
-    `https://api.thecatapi.com/v1/breeds?page=0&limit=15`,
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key":
-          "live_5LqU17EmpCQCYOqSG260OALJOZNozpPq4mviHyL6UtBP9VEGi6tjgd974EoH1XhD",
-      },
-    }
-  )
-    .then((res) => res.json())
-    .catch((err) => {
-      console.warn(err);
-    });
-  return response;
-});
+export const fetchBreeds = createAsyncThunk(
+  "breeds/fetchData",
+  async ({ params }) => {
+    //   async () => {
+    const response = await fetch(
+      //   `https://api.thecatapi.com/v1/breeds?${params}`,
+      //   `https://api.thecatapi.com/v1/breeds?limit=10&page=0`,
+      `https://api.thecatapi.com/v1/breeds?limit=10&${params}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key":
+            "live_5LqU17EmpCQCYOqSG260OALJOZNozpPq4mviHyL6UtBP9VEGi6tjgd974EoH1XhD",
+        },
+      }
+    )
+      .then((res) => res.json())
+      .catch((err) => {
+        console.warn(err);
+      });
+    return response;
+  }
+);
 
 export const breedsSlice = createSlice({
   name: "breeds",

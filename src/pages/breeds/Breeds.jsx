@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useSearchParams } from "react-router-dom";
 // custom hooks
 import useLocationParams from "../../hooks/useLocationParams";
 // fetch
@@ -15,16 +16,29 @@ import Pagination from "../../components/pagination/Pagination";
 
 const Breeds = () => {
   const dispatch = useDispatch();
-
+  const [search, setSearch] = useSearchParams();
   const { params } = useLocationParams();
   console.log("useLocationParams", params);
+
+  //   pagination
+  const [pageNumber, setPageNumber] = useState(0);
+  const currentPage = search.get("page");
+  console.log(currentPage);
 
   const loading = useSelector((state) => state.breedsReducer.loader);
   const breeds = useSelector((state) => state.breedsReducer.breedsData);
 
   useEffect(() => {
-    dispatch(fetchBreeds());
-  }, []);
+    if (currentPage === null) {
+      setPageNumber(currentPage ? parseInt(currentPage) : 0);
+    } else {
+      setPageNumber(currentPage ? parseInt(currentPage) : 0);
+    }
+  }, [currentPage]);
+
+  useEffect(() => {
+    dispatch(fetchBreeds({ params }));
+  }, [pageNumber]);
 
   return (
     <Box
@@ -48,7 +62,12 @@ const Breeds = () => {
         <Loader />
       ) : (
         <>
-          <GridLayout breeds={breeds} /> <Pagination />
+          <GridLayout breeds={breeds} />{" "}
+          <Pagination
+            pageNumber={pageNumber}
+            setPageNumber={setPageNumber}
+            currentPage={currentPage}
+          />
         </>
       )}
     </Box>
