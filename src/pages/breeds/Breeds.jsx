@@ -11,6 +11,7 @@ import Loader from "../../components/loader/Loader";
 import GridLayout from "../../components/gridLayout/GridLayout";
 import FilterByBreeds from "./components/filterByBreeds/FilterByBreeds";
 import LimitItems from "./components/limitItems/LimitItems";
+import Pagination from "../../components/pagination/Pagination";
 
 const Breeds = () => {
   const dispatch = useDispatch();
@@ -43,7 +44,13 @@ const Breeds = () => {
         <LimitItems />
       </Box>
       {/* Breeds */}
-      {loading ? <Loader /> : <GridLayout breeds={breeds} />}
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <GridLayout breeds={breeds} /> <Pagination />
+        </>
+      )}
     </Box>
   );
 };
