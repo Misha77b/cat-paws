@@ -26,7 +26,7 @@ const Breeds = () => {
   //   console.log(currentPage);
 
   // pageItems limit
-  const [limit, setLimit] = useState(null);
+  const [limit, setLimit] = useState(10);
   const currentLimit = search.get("limit");
   //   console.log(currentLimit);
 
@@ -45,6 +45,10 @@ const Breeds = () => {
     // console.log(parseInt(currentLimit));
     if (currentLimit === null) {
       setLimit(10);
+
+      //   comment 50, 51
+      search.set("limit", limit);
+      setSearch(search);
       //   search.set("limit", limit);
     } else {
       setLimit(parseInt(currentLimit));
