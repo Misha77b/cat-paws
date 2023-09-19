@@ -12,7 +12,8 @@ export const fetchBreeds = createAsyncThunk(
     const response = await fetch(
       //   `https://api.thecatapi.com/v1/breeds?${params}`,
       //   `https://api.thecatapi.com/v1/breeds?limit=10&page=0`,
-      `https://api.thecatapi.com/v1/breeds?limit=10&${params}`,
+      //   `https://api.thecatapi.com/v1/breeds?limit=10&${params}`,
+      `https://api.thecatapi.com/v1/breeds?${params}`,
       {
         method: "GET",
         headers: {

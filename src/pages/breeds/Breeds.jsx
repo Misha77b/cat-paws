@@ -23,7 +23,12 @@ const Breeds = () => {
   //   pagination
   const [pageNumber, setPageNumber] = useState(0);
   const currentPage = search.get("page");
-  console.log(currentPage);
+  //   console.log(currentPage);
+
+  // pageItems limit
+  const [limit, setLimit] = useState(null);
+  const currentLimit = search.get("limit");
+  //   console.log(currentLimit);
 
   const loading = useSelector((state) => state.breedsReducer.loader);
   const breeds = useSelector((state) => state.breedsReducer.breedsData);
@@ -37,8 +42,19 @@ const Breeds = () => {
   }, [currentPage]);
 
   useEffect(() => {
+    // console.log(parseInt(currentLimit));
+    if (currentLimit === null) {
+      setLimit(10);
+      //   search.set("limit", limit);
+    } else {
+      setLimit(parseInt(currentLimit));
+      //   search.set("limit", limit);
+    }
+  }, [limit]);
+
+  useEffect(() => {
     dispatch(fetchBreeds({ params }));
-  }, [pageNumber]);
+  }, [pageNumber, limit]);
 
   return (
     <Box
@@ -55,7 +71,7 @@ const Breeds = () => {
       >
         <LocationAndBackBtns />
         <FilterByBreeds />
-        <LimitItems />
+        <LimitItems limit={limit} setLimit={setLimit} />
       </Box>
       {/* Breeds */}
       {loading ? (

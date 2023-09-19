@@ -1,12 +1,18 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useSearchParams } from "react-router-dom";
 import { TextField, MenuItem } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { limitItems } from "./limitItmesArray";
 
-const LimitItems = () => {
-  const [limit, setLimit] = useState("10");
+const LimitItems = ({ limit, setLimit }) => {
+  const [search, setSearch] = useSearchParams();
+  //   const [limit, setLimit] = useState("10");
 
   const handleChange = (event) => {
     setLimit(event.target.value);
+    search.set("limit", event.target.value);
+    setSearch(search);
   };
 
   return (
@@ -32,12 +38,23 @@ const LimitItems = () => {
         },
       }}
     >
-      <MenuItem value={5}>Limit: 5</MenuItem>
-      <MenuItem value={10}>Limit: 10</MenuItem>
+      {limitItems.map((item) => {
+        return (
+          <MenuItem key={item.value} value={item.value}>
+            {item.text}
+          </MenuItem>
+        );
+      })}
+      {/* <MenuItem value={10}>Limit: 10</MenuItem>
       <MenuItem value={15}>Limit: 15</MenuItem>
-      <MenuItem value={20}>Limit: 20</MenuItem>
+      <MenuItem value={20}>Limit: 20</MenuItem> */}
     </TextField>
   );
 };
 
 export default LimitItems;
+
+LimitItems.propTypes = {
+  pageNumber: PropTypes.number,
+  setPageNumber: PropTypes.func,
+};
