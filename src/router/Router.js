@@ -4,6 +4,7 @@ import RootRouter from "./RootRouter";
 import Home from "../pages/home/Home";
 import Voting from "../pages/voting/Voting";
 import Breeds from "../pages/breeds/Breeds";
+import BreedInfo from "../pages/breedInfo/BreedInfo";
 import Gallary from "../pages/gallary/Gallary";
 import Likes from "../pages/likes/Likes";
 import Favourites from "../pages/favourites/Favourites";
@@ -21,26 +22,36 @@ export const router = createBrowserRouter([
         element: <Home />,
         index: true,
       },
+      //   voting
       {
         path: "/voting",
         element: <Voting />,
       },
+      //   breeds
       {
         path: "/breeds",
         element: <Breeds />,
       },
       {
+        path: "/breeds/:id",
+        element: <BreedInfo />,
+      },
+      //   gallary
+      {
         path: "/gallary",
         element: <Gallary />,
       },
+      //   likes
       {
         path: "/likes",
         element: <Likes />,
       },
+      //   favourites
       {
         path: "/favourites",
         element: <Favourites />,
       },
+      //   dislikes
       {
         path: "/dislikes",
         element: <Dislikes />,

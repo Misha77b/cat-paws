@@ -6,7 +6,7 @@ import Header from "../components/header/Header";
 import { useLocation } from "react-router-dom";
 
 const RootRouter = () => {
-  console.log(useLocation().pathname);
+  //   console.log(useLocation().pathname);
   //   temporary descision
   const location = useLocation().pathname;
 

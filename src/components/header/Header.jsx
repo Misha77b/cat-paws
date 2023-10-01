@@ -5,7 +5,13 @@ import NavIcons from "../navIcons/NavIcons";
 
 const Header = () => {
   return (
-    <Box sx={{ display: "flex", gap: "10px", width: " 100%" }}>
+    <Box
+      sx={{
+        marginBottom: "10px",
+        display: "flex",
+        gap: "10px",
+      }}
+    >
       <Search />
       <NavIcons />
     </Box>

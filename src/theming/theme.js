@@ -28,6 +28,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 10,
+          fontFamily: "Jost",
         },
       },
     },
@@ -51,7 +52,6 @@ export const theme = createTheme({
           fontSize: "20px",
           fontWeight: "400",
           borderRadius: 20,
-          background: "#FFF",
           "&::placeholder": {
             color: "#8C8C8C",
             fontFamily: "Jost",
@@ -66,8 +66,13 @@ export const theme = createTheme({
         root: {
           "& .MuiInputBase-root": {
             borderRadius: 20,
+            fontFamily: "Jost",
+            color: "#8C8C8C",
+            fontWeight: "400",
+            fontSize: "16px",
           },
           "& .MuiInputBase-input": {
+            background: "#FFF",
             padding: "15px 20px 15px 20px",
           },
           "& .MuiOutlinedInput-root": {
@@ -80,6 +85,47 @@ export const theme = createTheme({
             "&.Mui-focused fieldset": {
               borderColor: "#FF868E",
             },
+            "& .MuiSelect-select": {
+              padding: "8px 10px",
+              color: "#8C8C8C",
+              fontWeight: "400",
+              fontSize: "16px",
+            },
+          },
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: "10px",
+          maxHeight: "400px",
+          overflow: "hidden visible",
+          "::-webkit-scrollbar": {
+            width: "10px",
+            maxHeight: "40px",
+          },
+          "::-webkit-scrollbar-track": {
+            borderRadius: "0 10px 10px 0",
+            backgroundColor: "#F8F8F7",
+          },
+          "::-webkit-scrollbar-thumb": {
+            borderRadius: "30px",
+            boxShadow: "inset 0 0 20px #FF868E",
+          },
+        },
+      },
+    },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          maxHeight: "300px",
+          ".MuiMenuItem-root": {
+            fontFamily: "Jost",
+            color: "#8C8C8C",
+            fontWeight: "400",
+            fontSize: "16px",
+            lineHeight: "24px",
           },
         },
       },
